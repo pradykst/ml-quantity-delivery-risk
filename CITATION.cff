@@ -11,7 +11,7 @@ authors:
     given-names: "P."
 title: "Machine-learning-informed supplier selection/order allocation with quantity-dependent delivery risk"
 date-released: 2026-08-26
-url: "https://github.com/pradykst/ml-quantity-risk-ssoa"
+url: "https://github.com/pradykst/ml-quantity-delivery-risk"
 preferred-citation:
   type: conference-paper
   authors:

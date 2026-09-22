@@ -28,7 +28,13 @@ This study investigates the predictability of public health supply chain deliver
 
 The code requires Python 3.9+ and the dependencies listed in `requirements.txt`.
 
-### 1. Data Acquisition
+### 1. Clone the Repository
+```bash
+git clone https://github.com/pradykst/ml-quantity-delivery-risk.git
+cd ml-quantity-delivery-risk
+```
+
+### 2. Data Acquisition
 Due to licensing and size, the dataset is not tracked in this Git repository.
 You must download the USAID GHSC-PSM Health Commodity Delivery Dataset and place it in the `data/` folder.
 Run the verification script to ensure the checksum matches the exact version used in the study:
@@ -36,7 +42,7 @@ Run the verification script to ensure the checksum matches the exact version use
 python scripts/download_data.py
 ```
 
-### 2. Run the Pipeline
+### 3. Run the Pipeline
 We provide simple wrapper scripts for reproducibility. These scripts will install dependencies, run the test suite, and execute the final pipeline.
 
 **On Windows:**
@@ -49,7 +55,7 @@ reproduce.bat
 ./reproduce.sh
 ```
 
-### 3. Mapping to Paper
+### 4. Mapping to Paper
 The pipeline generates CSV files in `paper/final_results_tables/` that map directly to the tables presented in the manuscript:
 - `table1_dataset_protocol.csv`: Dataset statistics and protocol metrics.
 - `table2_predictive_results.csv`: Out-of-sample predictive performance.
