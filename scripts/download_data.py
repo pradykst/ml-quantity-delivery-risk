@@ -19,7 +19,9 @@ def main():
     if not os.path.exists(target_path):
         print(f"ERROR: Dataset not found at {target_path}")
         print("Please download the dataset manually and place it in the data/ directory.")
-        print("Refer to data/README.md for instructions.")
+        print("Official Data.gov catalog landing page:")
+        print("https://catalog.data.gov/dataset/usaid-ghsc-psm-health-commodity-delivery-dataset")
+        print("Refer to data/README.md for detailed instructions.")
         sys.exit(1)
         
     print(f"Found dataset at {target_path}. Verifying checksum...")

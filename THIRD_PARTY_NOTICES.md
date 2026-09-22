@@ -1,7 +1,7 @@
 # Third-Party Notices
 
 ## Dataset
-The USAID Global Health Supply Chain (GHSC) Program health commodity delivery dataset is used under public domain/open data terms provided by the US Agency for International Development (USAID) via Data.gov. 
+The dataset is published by the U.S. Agency for International Development (USAID) and cataloged through Data.gov. The raw dataset is not redistributed in this repository. Users should consult the source record and applicable source terms for reuse or redistribution.
 
 ## Python Packages
 This project relies on several open-source Python packages:
