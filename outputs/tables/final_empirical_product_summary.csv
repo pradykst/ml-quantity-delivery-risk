@@ -1,0 +1,11 @@
+product_id,representation,supported_bands,supported_test_N,late_events,spearman_model_vs_empirical,spearman_quantity_vs_empirical,endpoint_direction_agreement,note
+100076AAA08Z,Q2,3,29,7,1.0,1.0,1,Interpret with caution; wide Wilson CIs at band level.
+100076AAA08Z,Q4,3,29,7,1.0,1.0,1,Interpret with caution; wide Wilson CIs at band level.
+100076AAK08W,Q2,3,40,3,0.8660254037844387,0.0,0,Interpret with caution; wide Wilson CIs at band level.
+100076AAK08W,Q4,3,40,3,0.8660254037844387,0.0,0,Interpret with caution; wide Wilson CIs at band level.
+100076AAK08X,Q2,3,40,5,1.0,-0.5,1,Interpret with caution; wide Wilson CIs at band level.
+100076AAK08X,Q4,3,40,5,1.0,-0.5,1,Interpret with caution; wide Wilson CIs at band level.
+100110AAA06Z,Q2,3,24,3,0.8660254037844387,0.8660254037844387,1,Interpret with caution; wide Wilson CIs at band level.
+100110AAA06Z,Q4,3,24,3,0.0,0.8660254037844387,1,Interpret with caution; wide Wilson CIs at band level.
+102762AAA07L,Q2,6,53,15,0.7142857142857143,-0.48571428571428577,1,Interpret with caution; wide Wilson CIs at band level.
+102762AAA07L,Q4,6,53,15,0.7142857142857143,-0.48571428571428577,1,Interpret with caution; wide Wilson CIs at band level.

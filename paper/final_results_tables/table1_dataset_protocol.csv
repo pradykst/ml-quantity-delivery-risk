@@ -1,0 +1,10 @@
+metric,count
+Raw GHSC rows,43396
+Direct Drop rows,39306
+Direct Drop valid OTD Y/N,39289
+Protocol A train,30744
+Protocol B train,21930
+Validation 2022,5032
+Test 2023,3166
+Available 2024,347
+Combined test,3513

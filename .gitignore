@@ -1,0 +1,23 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+outputs/models/
+outputs/tmp/
+
+# Data
+data/USAID_GHSC_PSM_Health_Commodity_Delivery_Dataset.csv
+data/*.csv
+!data/README.md
+
+# Logs and ephemeral
+*.log
+*.zip
+*.patch
+catboost_info/
+
+# Agent/Temp
+ANTIGRAVITY_TASK.md
+baseline_outputs/
+.pytest_cache/

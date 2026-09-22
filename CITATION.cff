@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Kaushal"
+    given-names: "Pradyumna"
+    orcid: "https://orcid.org/0009-0003-4533-2543"
+    affiliation: "NIT Tiruchirappalli"
+  - family-names: "Jose"
+    given-names: "G. Jegan"
+  - family-names: "Parthiban"
+    given-names: "P."
+title: "Machine-learning-informed supplier selection/order allocation with quantity-dependent delivery risk"
+date-released: 2026-08-26
+url: "https://github.com/pradykst/ml-quantity-risk-ssoa"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Kaushal"
+      given-names: "Pradyumna"
+    - family-names: "Jose"
+      given-names: "G. Jegan"
+    - family-names: "Parthiban"
+      given-names: "P."
+  title: "Machine-learning-informed supplier selection/order allocation with quantity-dependent delivery risk"
+  conference:
+    name: "IC-AMMA 2026"
+  year: 2026

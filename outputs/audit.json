@@ -1,0 +1,21 @@
+{
+  "all_rows": 10324,
+  "direct_drop_rows": 4920,
+  "from_rdc_rows": 5404,
+  "direct_drop_suppliers": 72,
+  "direct_drop_items": 174,
+  "direct_drop_countries": 40,
+  "direct_drop_late_events": 259,
+  "direct_drop_late_rate": 0.05264227642276423,
+  "items_with_2plus_suppliers": 84,
+  "items_with_3plus_suppliers": 55,
+  "items_with_5plus_suppliers": 20,
+  "items_with_2plus_suppliers_each_10plus_orders": 25,
+  "items_with_2plus_suppliers_each_20plus_orders": 15,
+  "scheduled_date_min": "2006-05-02",
+  "scheduled_date_max": "2015-09-14",
+  "quantity_median": 1235.0,
+  "quantity_95pct": 56518.85000000007,
+  "delay_median_days": 0.0,
+  "delay_95pct_days": 1.0
+}
