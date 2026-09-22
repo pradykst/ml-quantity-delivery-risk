@@ -25,12 +25,39 @@ This study investigates the predictability of public health supply chain deliver
 
 ## Reproduction Instructions
 
-The code requires Python 3.9+ and the dependencies listed in `requirements.txt`.
+Verified reproduction environment: Python 3.13.1.
+Other Python versions may work but were not validated for the archived reproduction snapshot.
+The exact tested dependency versions are listed in `requirements.txt`:
+- pandas==2.2.3
+- numpy==2.2.6
+- scikit-learn==1.9.0
+- catboost==1.2.10
+- matplotlib==3.10.8
+- pytest==9.0.2
 
-### 2. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/pradykst/ml-quantity-delivery-risk.git
 cd ml-quantity-delivery-risk
+```
+
+### 2. Create the Environment
+Add explicit environment creation commands to ensure a clean state.
+
+**Windows:**
+```cmd
+py -3.13 -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+**POSIX:**
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ### 3. Data Acquisition
@@ -41,27 +68,18 @@ Run the verification script to ensure the checksum matches the exact version use
 python scripts/download_data.py
 ```
 
-### 4. Run the Pipeline
-We provide simple wrapper scripts for reproducibility. These scripts will install dependencies, run the test suite, and execute the final pipeline.
-
-**On Windows:**
-```cmd
-reproduce.bat
-```
-
-**On Linux/macOS:**
+### 4. Run Tests
 ```bash
-./reproduce.sh
-```
-
-Alternatively, you can run the commands directly in your virtual environment:
-```bash
-python scripts/download_data.py
 python -m pytest
+```
+
+### 5. Run the Pipeline
+We provide simple wrapper scripts for reproducibility (`reproduce.bat` / `reproduce.sh`). Alternatively, run directly:
+```bash
 python -m src.run_final_audit
 ```
 
-### 5. Mapping to Paper
+### 6. Mapping to Paper
 The pipeline generates CSV files in `paper/final_results_tables/` that map directly to the tables presented in the manuscript:
 - `table1_dataset_protocol.csv`: Dataset statistics and protocol metrics.
 - `table2_predictive_results.csv`: Out-of-sample predictive performance.
@@ -69,6 +87,12 @@ The pipeline generates CSV files in `paper/final_results_tables/` that map direc
 - `table4_sensitivity_summary.csv`: Ablation and sensitivity analysis results.
 
 Figures are generated in `outputs/figures/`.
+
+## Numerical Reproducibility
+- Counts, cohort membership, and classifications are expected to reproduce exactly.
+- Model-derived floating-point values may differ in insignificant final binary digits across compatible numerical-library/platform builds.
+- Reproduction is considered numerically equivalent using `rtol=1e-12` and `atol=1e-12`.
+- All metrics at the precision reported in the manuscript must remain unchanged.
 
 ## License
 The original code in this repository is licensed under the MIT License. Please see the `LICENSE` file. For third-party data and package attributions, see `THIRD_PARTY_NOTICES.md`.
